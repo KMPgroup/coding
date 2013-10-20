@@ -6,5 +6,5 @@ h4. Creating new rails app
 
 h4. Rails app structure
 
-* "app":/app_structure/app
-* [/app_structure/locales]
+* "app":/app_structure/app.textile
+* "locales":/app_structure/locales.textile
