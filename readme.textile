@@ -1,1 +1,10 @@
-h1. Coding Practices in KMP
+h3. Coding Practices in KMP
+
+h4. General
+
+h4. Creating new rails app
+
+h4. Rails app structure
+
+* [/app_structure/app]
+* [/app_structure/locales]
