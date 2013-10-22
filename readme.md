@@ -10,5 +10,5 @@
 
  - [locales][2]
 
-   [1]: new_apps/template
-   [2]: app_structure/locales
+   [1]: new_apps/template.md
+   [2]: app_structure/locales.md
