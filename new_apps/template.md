@@ -16,6 +16,7 @@ The script will ask you a series of questions about your desired configuration. 
 
 We use the following config:
 
+ - database - MySQL (soon to change to PostgreSQL), if a NoSQL solution isn't needed (consult specification or supervisor)
  - template engine - Haml
  - unit testing - RSpec
  - integration testing - RSpec with Capybara
