@@ -16,7 +16,7 @@ The script will ask you a series of questions about your desired configuration. 
 
 We use the following config:
 
- - database - MySQL (soon to change to PostgreSQL), if a NoSQL solution isn't needed (consult specification or supervisor)
+ - database - MySQL (soon to change to PostgreSQL - this is [why][2]), if a NoSQL solution isn't needed (consult specification or supervisor)
  - template engine - Haml
  - unit testing - RSpec
  - integration testing - RSpec with Capybara
@@ -34,3 +34,4 @@ In case of any doubts, refer to [rails-composer readme][1]
 
 
   [1]: https://github.com/RailsApps/rails-composer/
+  [2]: http://adamsanderson.github.io/railsconf_2013/?full#1
