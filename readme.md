@@ -1,6 +1,7 @@
 # Coding Practices in KMP
  
 ### General
+  - [selector's specificity][3]
 
 ### Creating new apps
 
@@ -12,3 +13,4 @@
 
    [1]: new_apps/template.md
    [2]: app_structure/locales.md
+   [3]: styling/selectors.md
