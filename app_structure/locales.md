@@ -31,6 +31,15 @@ Inside **config/locale** each language should have its own folder. Inside that f
 ...
 ```
 
+To work there should be some changes in application.rb file:
+
+```
+config.i18n.load_path += Dir[
+  Rails.root.join('config', 'locales', 'pl' ,'*.{rb,yml}').to_s,
+  Rails.root.join('config', 'locales', 'pl' , "resources" ,'*.{rb,yml}').to_s
+]
+```
+
 **Example global namespaced file example:**
 
 global namespaced files are straight simple:
