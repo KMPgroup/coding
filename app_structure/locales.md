@@ -31,7 +31,7 @@ Inside **config/locale** each language should have its own folder. Inside that f
 ...
 ```
 
-To work there should be some changes in application.rb file:
+Needed changes in application.rb file:
 
 ```
 config.i18n.load_path += Dir[
