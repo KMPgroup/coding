@@ -19,7 +19,7 @@ We use the following config:
  - database - MySQL (soon to change to PostgreSQL - this is [why][2]), if a NoSQL solution isn't needed (consult specification or supervisor)
  - template engine - Haml
  - unit testing - RSpec
- - integration testing - RSpec with Capybara
+ - integration testing - refer to [guide][3]
  - fixture replacement - FactoryGirl
  - frontend framework - Bootstrap or Zurb
  - mail sendind - SMTP
@@ -35,3 +35,4 @@ In case of any doubts, refer to [rails-composer readme][1]
 
   [1]: https://github.com/RailsApps/rails-composer/
   [2]: http://adamsanderson.github.io/railsconf_2013/?full#1
+  [3]: integration_tests.md
