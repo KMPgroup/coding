@@ -15,7 +15,7 @@ Capybara.register_driver :poltergeist do |app|
   Capybara::Poltergeist::Driver.new(app, phantomjs_logger: WarningSuppressor)
 end
 Capybara.javascript_driver = :poltergeist
-Capybara.app_host          = "http://0.0.0.0:9292
+Capybara.app_host          = "http://0.0.0.0:9292"
 Capybara.server_port       = 9292
 ```
 
