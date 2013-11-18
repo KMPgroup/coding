@@ -7,7 +7,6 @@ Guidelines:
  - Place your specs in `spec/features` folder
  - Place your Page Objects in `spec/support/pages`
  - Always use the [rspec expect syntax][4]
- - Remember to set `Capybara.app_host = "http://0.0.0.0:9292"` in your `spec_helper.rb`
  - Install phantomjs (`brew install phantomjs`) and use [Poltergeist][5] as [Capybara][6] driver:
 
 
@@ -16,6 +15,8 @@ Capybara.register_driver :poltergeist do |app|
   Capybara::Poltergeist::Driver.new(app, phantomjs_logger: WarningSuppressor)
 end
 Capybara.javascript_driver = :poltergeist
+Capybara.app_host          = "http://0.0.0.0:9292
+Capybara.server_port       = 9292
 ```
 
 In Mac OS 10.9 Mavericks, phantomjs has some sort of bug and logs out errors into spec output. To silence those errors (you know, until a fix arrives), add to your spec/support folder these 2 files:
@@ -93,7 +94,32 @@ describe "SomeTest" do
 end
 ```
 
+There is one caveat, when you are writing javascript specs (`js: true`), that you have to keep in mind. Poltergeist (the phantomjs capybara driver) uses a seperate database connection ([stackoverflow][8]). 
+
+Because of this, the session is lost, so when you visit the sign in page in a `before` block and submit the form, the user session will be lost when you are redirected and thus you will be back on the sign in page.
+
+To fix that create file `support/share_db_connection.rb`, with the following contents:
+
+```ruby
+class ActiveRecord::Base
+  mattr_accessor :shared_connection
+  @@shared_connection = nil
+ 
+  def self.connection
+    @@shared_connection || retrieve_connection
+  end
+end
+ 
+# Forces all threads to share the same connection. This works on
+# Capybara because it starts the web server in a thread.
+ActiveRecord::Base.shared_connection = ActiveRecord::Base.connection
+```
+
+Now all will work as expected.
+
+
 With this setup you are ready to write killer integration specs.
+
 
   [1]: https://github.com/jnicklas/capybara
   [2]: https://github.com/natritmeyer/site_prism
@@ -102,3 +128,4 @@ With this setup you are ready to write killer integration specs.
   [5]: https://github.com/jonleighton/poltergeist
   [6]: https://github.com/jnicklas/capybara
   [7]: https://github.com/plataformatec/devise
+  [8]: http://stackoverflow.com/questions/18623661/why-is-capybara-discarding-my-session-after-one-event
