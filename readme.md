@@ -15,6 +15,7 @@ When you are done with your code, run the tests, and make sure they pass, check 
 ## Guides
 
 ### Rails
+ - [using vagrant][0]
  - [using templates][1]
  - [locales][2]
  - [writing integration tests][3]
@@ -23,6 +24,7 @@ When you are done with your code, run the tests, and make sure they pass, check 
 ### CSS
   - [selector's specificity][5]
 
+   [0]: rails/vagrant.md
    [1]: rails/template.md
    [2]: rails/locales.md
    [3]: rails/integration_tests.md
