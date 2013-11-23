@@ -142,7 +142,7 @@ go to /vagrant `bundle install` and run webrick:
     $ bundle install
     $ rails s
 
-Dont forteg to check `localhost:4567` in your local browser
+Dont forget to check `localhost:4567` in your local browser
 
 
   [1]: http://www.vagrantup.com/
