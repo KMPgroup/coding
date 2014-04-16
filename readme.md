@@ -8,7 +8,7 @@
 * `staging` - stable, testing server code
 * `dev` - development branch, all new features should be pulled here
 
-When yous want to change the code, always create a new, local, branch out of the `dev` branch. The branch name should reference the issue/task it concerns. For example `123-refactor-authentication-logic` would point to #123 Refactor authentication logic.
+When you want to change the code, always create a new, local, branch out of the `dev` branch. The branch name should reference the issue/task it concerns. For example `123-refactor-authentication-logic` would point to #123 Refactor authentication logic.
 
 When you are done with your code, run the tests, and make sure they pass, check coverage and run `rails_best_practices`. Then and only then, create a pull request to the `dev` branch.
 
