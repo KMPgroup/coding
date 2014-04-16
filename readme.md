@@ -12,7 +12,6 @@ When you want to change the code, always create a new, local, branch out of the 
 
 When you are done with your code, run the tests, and make sure they pass, check coverage and run `rails_best_practices`. Then and only then, create a pull request to the `dev` branch.
 
-
 ## Guides
 
 ### Rails

@@ -97,9 +97,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
           "bootstrap.mlockall" => false
         },
       'mysql' => {
-        'server_root_password' => "pDe86k",
-        'server_repl_password' => "pDe86k",
-        'server_debian_password' => "pDe86k"
+        'server_root_password' => "pass",
+        'server_repl_password' => "pass",
+        'server_debian_password' => "pass"
         }
       }
   end
