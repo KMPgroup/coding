@@ -20,6 +20,7 @@ When you are done with your code, run the tests, and make sure they pass, check 
  - [locales][2]
  - [writing integration tests][3]
  - [attachable assets][4]
+ - [writing gems][6]
 
 ### CSS
   - [selector's specificity][5]
@@ -30,3 +31,4 @@ When you are done with your code, run the tests, and make sure they pass, check 
    [3]: rails/integration_tests.md
    [4]: rails/attachable_assets.md
    [5]: css/selectors.md
+   [6]: rails/writing_gems.md
