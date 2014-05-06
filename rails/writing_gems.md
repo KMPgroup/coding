@@ -15,7 +15,7 @@ Alternatively you can always place your code in /lib and extract it to a gem aft
       /vendor/gems
       ...
   ```
-2. Then it that folder invoke `$bundle gem NAME-OF-YOUR-GEM`
+2. Then in that folder invoke `$bundle gem NAME-OF-YOUR-GEM`
 3. Create new repo for your new gem and push it to the github
 4. In your Gemfile add:
   ```
