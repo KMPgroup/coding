@@ -1,10 +1,10 @@
 ### Writing gems
 
-If you have to implement the new feature to your app and you are thinking that in the future you may uset it again on other project (lets say social networking site for turtles) - its good to start with packing it to an external gem at the beggining. 
+If you have to implement the new feature to your app and you are thinking that in the future you may use it again in other project (lets say social networking site for turtles) - its good to start with packing it to an external gem at the beggining. 
 
 Alternatively you can always place your code in /lib and extract it to a gem after developing, but
 - it requires additional work,
-- extraction could breake something which you forgot to test.
+- extraction could break something which you forgot to test.
 
 #### So lets get started!
 
