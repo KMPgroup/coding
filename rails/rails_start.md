@@ -1,5 +1,7 @@
 # Configure RoR application
 
+_this is a draft - we are working on it_
+
 ## Developing
 
 - install pry [REQ]
