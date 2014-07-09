@@ -2,6 +2,10 @@
 
 ## Workflow
 
+### Start
+
+  - [configure RoR application][7]
+
 ### Branches
 
 * `master` - stable, production server code
@@ -32,3 +36,4 @@ When you are done with your code, run the tests, and make sure they pass, check 
    [4]: rails/attachable_assets.md
    [5]: css/selectors.md
    [6]: rails/writing_gems.md
+   [7]: rails/rails_start.md
