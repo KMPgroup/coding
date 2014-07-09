@@ -36,6 +36,7 @@ _this is a draft - we are working on it_
 ## API
 
 - grape ? rocket pants
+- active_model_serializers
 
 ## Frontend frameworks
 
@@ -54,12 +55,24 @@ _this is a draft - we are working on it_
 
 ## Testing
 
+- factory_girl_rails
+- simplecov - test coverage statistics
+- konacha - testing javascript with the mocha test framework and chai assertion library
+
 ## Other
 
 - carierwave for file uploads
 - active admin as an admin panel with active_skin
 - whenever (cron controller)
 - figaro for managing environment variables
+
+## Services / Interactors
+
+- active_interaction
+
+## Elasticsearch / Indexing
+
+- chewy
 
 
 
