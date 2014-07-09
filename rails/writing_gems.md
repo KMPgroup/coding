@@ -1,10 +1,10 @@
 ### Writing gems
 
-If you have to implement the new feature to your app and you are thinking that in the future you may uset it again on other project (lets say social networking site for turtles) - its good to start with packing it to an external gem at the beggining. 
+If you have to implement the new feature to your app and you are thinking that in the future you may use it again in other project (lets say social networking site for turtles) - its good to start with packing it to an external gem at the beginning. 
 
 Alternatively you can always place your code in /lib and extract it to a gem after developing, but
 - it requires additional work,
-- extraction could breake something which you forgot to test.
+- extraction could break something which you forgot to test.
 
 #### So lets get started!
 
@@ -15,18 +15,19 @@ Alternatively you can always place your code in /lib and extract it to a gem aft
       /vendor/gems
       ...
   ```
-2. Then it that folder invoke `$bundle gem NAME-OF-YOUR-GEM`
+2. Then in that folder invoke `$bundle gem NAME-OF-YOUR-GEM`
 3. Create new repo for your new gem and push it to the github
 4. In your Gemfile add:
-  ```
-      ...
-      if ENV['MY_BUNDLE_ENV'] == "dev"
-        gem 'NAME-OF-YOUR-GEM', :path => "./vendor/gems/NAME-OF-YOUR-GEM"
-      else
-        gem 'NAME-OF-YOUR-GEM', :github => "YOURNAME/NAME-OF-YOUR-GEM"
-      end
-      ...
-  ```
+
+``` ruby
+...
+if ENV['MY_BUNDLE_ENV'] == "dev"
+  gem 'NAME-OF-YOUR-GEM', :path => "./vendor/gems/NAME-OF-YOUR-GEM"
+else
+  gem 'NAME-OF-YOUR-GEM', :github => "YOURNAME/NAME-OF-YOUR-GEM"
+end
+...
+```
 
 And this is it. Now in the terminal you can write `export MY_BUNDLE_ENV='dev'` and voila: you are using your local version. In production - github version will be used.
 
