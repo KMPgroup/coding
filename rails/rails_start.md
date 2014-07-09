@@ -5,11 +5,13 @@ _this is a draft - we are working on it_
 ## Developing
 
 - install pry [REQ]
+- better_errors [REQ]
+- quiet assets [REQ]
 
 ## CSS and HTML replacement and structure.
 
 - For HTML replacement use slim
-- insted of css use sass
+- insted of css use .sass
 - use i18n_structure to put your locale files in the right place
 - bourbon as a mixin library
 - boxmodel-rails
