@@ -2,23 +2,46 @@
 
 _this is a draft - we are working on it_
 
+## Architecture
+
+- active_interaction
+
 ## Developing
 
-- install pry [REQ]
+- pry_rails [REQ]
 - better_errors [REQ]
-- quiet assets [REQ]
+- quiet_assets [REQ]
+- rails_best_practices
+- bullet
+- schema_plus
+- rails-i18n
+
+## Authentication and Authorization
+
+- devise
+- cancancan
+- doorkeeper for OAuth
 
 ## CSS and HTML replacement and structure.
 
 - For HTML replacement use slim
+- simple_form
 - insted of css use .sass
 - use i18n_structure to put your locale files in the right place
 - bourbon as a mixin library
 - boxmodel-rails
 
-## JS controlls
+## JS Utils
+
+- underscore.js
+- moment.js instead of plain Date
+
+## JS controls
 
 - select2 as a better select
+- iCheck
+- alertify.js
+- NProgress
 
 ## css
 
@@ -35,12 +58,18 @@ _this is a draft - we are working on it_
 
 ## API
 
-- grape ? rocket pants
+- grape
+- active_model_serializers
 
 ## Frontend frameworks
 
-- backbonejs (for advanced parts of the web page in js)
-- angular.js 
+- angular.js
+- angular-classy for better controllers
+- angular-ui-select2
+- ui-router
+- rails-angular-resource or restangular
+- ng-animate
+- angular-translate for I18n
 
 ## Views extensions
 
@@ -53,6 +82,15 @@ _this is a draft - we are working on it_
 - airbrake [REQ]
 
 ## Testing
+
+- rspec
+- capybara
+- timecop
+- factory_girl
+- shoulda
+- fuubar
+- database_cleaner
+- simple_cov
 
 ## Other
 
